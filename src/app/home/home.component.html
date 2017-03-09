@@ -1,0 +1,111 @@
+<div class="container-fluid" style="padding-left:0px;" >
+	<div class="row">
+		<!-- carrousel -->
+		<div class="col-md-8" style="padding-right: 0px; ">
+			<div id="carousel-home" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+		  		<ol class="carousel-indicators">
+		  			<li *ngFor="let image of carrouselImages;let i=index" data-target="#carousel-home" [attr.data-slide-to]="i" [class.active]="i==0"></li>
+			  	</ol>
+			<!-- Wrapper for slides -->
+		  		<div class="carousel-inner" role="listbox">
+		    		<div *ngFor="let image of carrouselImages;let i=index" class="item" [class.active]="i==0">
+		      			<img src="{{image}}" alt="docushare_xenon-it" />
+		   			</div>
+		  		</div>
+			</div>
+		</div>
+		<!-- end carrousel -->
+		<div class="col-md-4">
+			<div clas="row">
+				<div class="panel panel-primary">
+  					<div class="panel-body bg-primary">
+    					<span class="h3">Bonjour {{webstorage.authid}}!</span>
+    				</div>
+				</div>
+				<div class="col-xs-10">
+					<h3>COMMUNAUTÉS</h3>
+					<p>Découvrir nos espaces communautaires</p>
+					<div>
+						<h4><span class="glyphicon glyphicon-list-alt home_second_icons"></span>Espaces de travail <span class="home_items">[ajouter]</span></h4>
+						<a class="btn btn-info btn-xs">Suite</a>
+						<hr>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="panel panel-default">
+  									<div class="panel-body">
+    									Wikis<a class="btn btn-info btn-xs">Suite</a>
+    								</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="panel panel-default">
+  									<div class="panel-body">
+    									Blogues<a class="btn btn-info btn-xs">Suite</a>
+    								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<span class="glyphicon glyphicon-tags home_main_icons"></span>
+				</div>
+			</div>		
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row is-same-height ">
+		<div class="col-sm-6 col-md-4 home_main_div">
+			<div clas="row">
+				<div class="col-xs-10">
+					<h3>COLLECTIONS</h3>
+					<p>Collections de niveau supérieurs</p>
+					<div><ul class="list-unstyled"><li *ngFor="let collection of collections" class="home_items"><span class="glyphicon glyphicon-folder-open home_second_icons"></span><a [routerLink]="['/collection',{url:collection}]">{{collection}}</a></li></ul></div>
+				</div>
+				<div class="col-xs-2">
+					<span class="glyphicon glyphicon-th-list home_main_icons"></span>
+				</div>
+			</div>		
+		</div>
+		<div class="col-sm-6 col-md-4 home_main_div">
+			<div clas="row">
+				<div class="col-xs-10">
+					<h3>AUTRES LIENS</h3>
+					<p>Liens vers un autres contenu</p>
+					<div>
+						<ul class="list-unstyled">
+							<li class="home_items">
+								<span class="glyphicon glyphicon-home home_second_icons"></span>Mon DocuShare<br />
+								<small>Votre page d'accueil DocuShare personnalisée</small>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<span class="glyphicon glyphicon-link home_main_icons"></span>
+				</div>
+			</div>		
+		</div>
+		<div class="col-sm-6 col-md-4 home_main_div2">
+			<div clas="row">
+				<div class="col-xs-10">
+					<h3>AUTRES LIENS</h3>
+					<p>Liens vers un autres contenu</p>
+					<div>
+						<ul class="list-unstyled">
+							<li class="home_items">
+								<span class="glyphicon glyphicon-home home_second_icons"></span>Mon DocuShare<br />
+								<small>Votre page d'accueil DocuShare personnalisée</small>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<span class="glyphicon glyphicon-link home_main_icons"></span>
+				</div>
+			</div>		
+		</div>
+	</div>
+</div>

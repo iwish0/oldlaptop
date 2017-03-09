@@ -1,0 +1,48 @@
+ #infoMessage{
+ 	color:#215C89;
+ 	/*font-weight:bold;*/
+
+ }
+ #mainLoginFormWrapper{
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	margin-top: 20px;
+	background-color:#EDEFF1;
+	padding-top:10px;
+}
+#mainLoginForm>div:nth-child(1){
+	margin-bottom: 20px;
+
+	padding: 10px;
+}
+#mainLoginFormWrapper .btn{
+	background-color:#383e42;
+	color:#ffffff;
+}
+#mainLoginFormWrapper .btn:hover{
+	background-color:#dddddd;
+	color:#333333;
+}
+.circle-icon-lg{
+	width:90px;
+	height:90px;
+	border-radius: 50px;
+	margin-left:auto;
+	margin-right: auto;
+	
+	/*margin-bottom:20px;*/
+	position:relative;
+	background-color:#ffffff;
+
+}
+.circle-icon-lg span.glyphicon{
+	font-size:30px;
+	position:absolute;
+	top:30px;
+	left:30px;
+	color:#555555;
+
+}
+#forgetPasswordLink{
+	margin-top:12px;
+}
+ 

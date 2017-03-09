@@ -1,0 +1,18 @@
+<div class="container-fluid">
+	<div id="titleBlock">
+		<h3 class="h4">
+			<span class="glyphicon glyphicon-folder-open"></span> {{url}}
+		</h3>
+		<div id="subMenuBlock" (click)="onClickSubMenu()">
+			<span class="glyphicon glyphicon-option-horizontal"></span>
+		</div>
+		<div *ngIf="subMenu1">
+			<ul class="list-unstyled">
+				<li>Propriétés<span class="glyphicon glyphicon-list-alt"></span></li>
+				<li>Supprimer Collection<span class="glyphicon glyphicon-trash"></span></li>
+				<li>Droits d'accès<span class="glyphicon glyphicon-lock"></span></li>
+				<li>Page de couverture de numérisation<span class="glyphicon glyphicon-file"></span></li>
+			</ul>
+		</div>
+	</div>
+</div>
